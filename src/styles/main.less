@@ -1,0 +1,87 @@
+
+@fonteDoTitulo: lobster, cursive;
+@corDeFundo: #eb3b5a;
+@corDoTexto: #fff;
+@corDeFundoDoBotao:#f7b731;
+@corDoTextoDoBotao:#000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fonteDoTitulo;
+}   
+
+.linhaNoMeio {
+    text-decoration: line-through;
+    text-decoration-thickness: 2.5px;
+    list-style: none;
+}
+
+body {
+    background-color: @corDeFundo;
+    padding-top: 100px;
+}
+
+header {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#botao-adicionar{
+    background-color: @corDeFundoDoBotao;
+    color: @corDoTextoDoBotao;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+    background-color: @corDeFundoDoBotao;
+    color: @corDoTextoDoBotao;
+    margin-top: 10px;
+}
+
+input:-webkit-autofill {
+    background-color: @corDeFundoDoBotao;
+    -webkit-box-shadow: 0 0 0 1000px @corDeFundoDoBotao inset
+}
+
+form, ol {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
+ol li::marker {
+    color: @corDeFundoDoBotao; 
+}
+
+#taskList {
+    color: @corDoTexto;
+    font-size: 30px;
+}
+
+#taskList button {
+    background-color: @corDeFundoDoBotao;
+    color: @corDoTextoDoBotao;
+    padding: 2px;
+}
